@@ -1,59 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.ike" name="[B][COLOR gold]Team.Ike[/B][/COLOR]" version="1.0.8" provider-name="IKE">
+<addon id="plugin.video.Blackarrowtorrent"
+       name="[COLOR red][B]BlackArrow [B][/COLOR] [COLOR red][B]Torrent[/B][/COLOR]"
+       version="1.2"
+       provider-name="Flecha Negra">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.t0mm0.common" version="2.0.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
     <import addon="script.module.simple.downloader" version="0.9.4"/>
     <import addon="script.module.beautifulsoup4"/>
-    <import addon="script.module.requests"/>
-    <import addon="script.module.httplib2"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
     <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson"/>
+    <import addon="plugin.video.youtube" version="3.0.0"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
+    <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">FILMES Online</summary>
-    <description lang="en">FILMES ONLINE BY:TEAM IKE</description>
+    <summary lang="en">BlackArrow Torrent</summary>
+    <description lang="en">BlackArrow é um addon torrent 2020</description>
     <platform>all</platform>
   </extension>
-</addon>
-
-<addon id="plugin.video.quasar" name="Quasar" version="0.9.78" provider-name="scakemyer">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="xbmc.python" version="2.24.0" />
-        <import addon="repository.quasar" optional="true" />
-        <import addon="script.quasar.burst" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Quasar: Torrent streaming</summary>
-        <description lang="en">Quasar is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar project from steeve.</description>
-        <language>en el es de fi fr he hr it nl pt ro sk</language>
-        <platform>all</platform>
-        <website>https://github.com/scakemyer/plugin.video.quasar</website>
-        <source>https://github.com/scakemyer/plugin.video.quasar</source>
-        <forum>http://forum.kodi.tv/showthread.php?tid=257967</forum>
-        <license>Non commercial. See https://github.com/scakemyer/plugin.video.quasar/blob/master/LICENSE</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <screenshot>resources/screenshots/home.jpg</screenshot>
-            <screenshot>resources/screenshots/movies.jpg</screenshot>
-            <screenshot>resources/screenshots/webui.png</screenshot>
-        </assets>
-    </extension>
-</addon>
+ </addon>
 
 <addon id="program.plexus"
        name="Plexus"
@@ -80,15 +55,15 @@
   </extension>
 </addon>
 
-<addon id="repository.ike" name="[COLOR gold][B]Ike.Vip[/B][/COLOR]" version="0.6" provider-name="[COLOR lime][B]IKE[/B][/COLOR]">
-	<extension point="xbmc.addon.repository" name="repository.IKE">
-		<info compressed="false">https://raw.githubusercontent.com/mimi567/ike/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/mimi567/ike/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/mimi567/ike/master/repo/</datadir>
+<addon id="repository.justiceiro1977" name="[COLOR gold][B]Justiceito 1977[/B][/COLOR]" version="0.1" provider-name="[COLOR lime][B]Flecha[/B][/COLOR]">
+	<extension point="xbmc.addon.repository" name="repository.justiceiro1977">
+		<info compressed="false">https://raw.githubusercontent.com/justiceiro1977/justiceiro1977/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/justiceiro1977/justiceiro1977/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/justiceiro1977/justiceiro1977/master/repo/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>[COLOR blue][B]IkeVip.Repo[/B][/COLOR]</summary>
-		<description>[COLOR red][B]Ikevip.Repo[/B][/COLOR]</description>
+		<summary>[COLOR blue][B]Justiceiro.Repo[/B][/COLOR]</summary>
+		<description>[COLOR red][B]Justiceiro.Repo[/B][/COLOR]</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
@@ -134,25 +109,6 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon>
-
-<addon id="service.ike.autosubs"
-    name="Ike AutoSubs" version="1.0" provider-name="Ike">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.service" library="default.py" start="login" />
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>all</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Auto Search for Subtitles on Play</summary>
-    <description lang="en">Auto Search for Subtitles on Playback start if no subs are found.[CR][CR]Icon credits goes to zNET Computer Solutions http://www.znetcs.pl</description>
-    <summary lang="pt">Pesquisa Automática por legendas no Play</summary>
-    <description lang="pt">Pesquisa Automática por legendas na reprodução se não existirem legendas.[CR][CR]Créditos dos icons vão para zNET Computer Solutions http://www.znetcs.pl</description>
-    <platform>all</platform>
-    <language>pt</language>
-  </extension>
 </addon>
 
 <addon id="service.subtitles.opensubtitles_by_opensubtitles"
