@@ -27,7 +27,7 @@
 
 <addon
   id="pvr.KnightRidera"
-  version="0.0.3"
+  version="0.3"
   name="KnightRidera Client"
   provider-name="KnightRidera">
   <requires>
@@ -191,7 +191,7 @@
 
 <addon
   id="pvr.KnightRidera"
-  version="0.0.3"
+  version="0.3"
   name="KnightRidera Client"
   provider-name="KnightRidera">
   <requires>
@@ -355,7 +355,7 @@
 
 <addon
   id="pvr.KnightRidera64"
-  version="0.0.3"
+  version="0.3"
   name="KnightRider Client"
   provider-name="KnightRider">
   <requires>
@@ -519,7 +519,7 @@
 
 <addon
   id="pvr.KnightRiderw686"
-  version="0.0.3"
+  version="0.3"
   name="KnightRider Client"
   provider-name="KnightRider">
   <requires>
