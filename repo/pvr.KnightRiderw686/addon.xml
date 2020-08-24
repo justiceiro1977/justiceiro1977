@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="pvr.KnightRiderw686"
-  version="0.0.3"
+  version="0.3"
   name="KnightRider Client"
   provider-name="KnightRider">
   <requires>
